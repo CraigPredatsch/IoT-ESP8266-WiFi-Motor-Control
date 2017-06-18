@@ -7,8 +7,8 @@ on a computer or a cell phone connected to WiFi.
 
 A video of this project can be seen at the following link: https://drive.google.com/open?id=0BzlL2mOr29jDYy04a3BlaHcwemc
 
-By following the attached link, you will see a video of the motor be driven forward, stopped, and driven in reverse through
-a web browser at first on a computer and then on a cell phone.
+The link contains a video of the motor be driven forward, stopped, and driven in reverse through a web browser at first 
+on a computer and then on a cell phone.
 
 ## Hardware
 
