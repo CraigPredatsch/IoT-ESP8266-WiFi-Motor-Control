@@ -1,7 +1,11 @@
-# IoT-ESP8266-WiFi-Motor-Control
+# IoT ESP8266 WiFi Motor Control
 
 For this project, I developed the hardware and firmware to operate a motor through a web browser
 on a computer or a cell phone connected to WiFi.
+
+## Demonstration
+
+A video of this project can be seen at the following link: https://drive.google.com/open?id=0BzlL2mOr29jDYy04a3BlaHcwemc
 
 ## Hardware
 
