@@ -32,3 +32,10 @@ Another thing I would like to note is that the output of the NodeMCU from GPIO 1
 of the Arduino. The NodeMCU can only output at 3.3V, which may be too low for the Arduino to read through a digital input.
 The Arduino can, however, determine analog inputs from 0 - 5 V. In firmware I have the Arduino perfrom an analogRead at the
 two analog inputs and set a condition to be met at a 2V threshold that the 3.3V output of the NodeMCU could easily surpass.
+
+## Firmware
+
+* Arduino IDE (Used for Arduino Uno and NodeMCU)
+
+## Firmware Operation
+
