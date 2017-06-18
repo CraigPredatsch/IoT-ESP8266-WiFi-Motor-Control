@@ -35,7 +35,19 @@ two analog inputs and set a condition to be met at a 2V threshold that the 3.3V 
 
 ## Firmware
 
-* Arduino IDE (Used for Arduino Uno and NodeMCU)
+* NodeMCU_GUI_Motor_test.ino (Arduino IDE script for NodeMCU)
+* Arduino_ESP_Motor.ino (Arduino IDE script for Arduino Uno) 
 
 ## Firmware Operation
 
+I recommend opening up the two Arduino scripts I have provided and reading through them. Below, I am providing a description
+of how they work, but I have left comments in the scripts that give line by line detail on how the scripts work.
+
+The NodeMCU_GUI_Motor_test.ino script runs the NodeMCU. It will connect to WiFi via the router information provided and
+connect to a web server. It will print out, via serial connection, the IP address that the user can enter into their web
+browser to reach the GUI that will operate the NodeMCU. The GUI is also created in this script in HTML via the client.println()
+function. This script will then take the responses genrated from user interaction with the GUI (clicking the buttons that have
+been created) and it will turn GPIO pins 13 and/or 14 High or Low. These outputs are connected to the Arduino, and they will
+determine the next steps of the process on the Arduino side.
+
+The Arduino_ESP_Motor.ino script runs the Arduino Uno.
