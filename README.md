@@ -50,4 +50,7 @@ function. This script will then take the responses genrated from user interactio
 been created) and it will turn GPIO pins 13 and/or 14 High or Low. These outputs are connected to the Arduino, and they will
 determine the next steps of the process on the Arduino side.
 
-The Arduino_ESP_Motor.ino script runs the Arduino Uno.
+The Arduino_ESP_Motor.ino script runs the Arduino Uno. This script will look for an input voltage greater than 2V through two 
+of its analog pins. When the Arduino receives the 3.3V output from the NodeMCU through these pins, it will either trigger a
+function to begin moving the motor in the "forward" direction or trigger a function to begin moving the motor in the "reverse"
+direction. If the Arduino receives a LOW input through both analog pins, it will trigger the function to stop motor movement.
