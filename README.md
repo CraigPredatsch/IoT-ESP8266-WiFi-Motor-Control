@@ -23,7 +23,7 @@ on a computer and then on a cell phone.
 
 ## Hardware Setup
 
-For a schematic view of the setup, open up the file "IoT ESP8266 WiFi Motor Control_schem.pdf". The setup is, for
+For a schematic view of the setup, open up the file "IoT ESP8266 WiFi Motor Control schem.pdf". The setup is, for
 the most part, fairly self explanatory. However, there are a few things I would like to go into more detail on.
 
 One aspect that I would like to explain in this setup, I connected my computer to the NodeMCU board via the FTDI 
