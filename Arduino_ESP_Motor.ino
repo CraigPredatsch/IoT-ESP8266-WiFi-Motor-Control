@@ -10,7 +10,7 @@ const int inputPin2 = A1;         //Utilize Analog pins because ESP8266 only pro
 
 void setup() {
 
-  pinMode(inputPin1, INPUT);                        //Initialize input pinrs from ESP8266 as inputs to the Arduino
+  pinMode(inputPin1, INPUT);                        //Initialize input pins from ESP8266 as inputs to the Arduino
   pinMode(inputPin2, INPUT);
   
   pinMode(controlPin1, OUTPUT);                     //Initialize motor control, H-Bridge pins as outputs
@@ -36,7 +36,7 @@ void motor_forward() {                      //Function to move our motor forward
 void motor_backwards() {                    //Function to move our motor forward for an amount of time input by the user
 
   digitalWrite(bridgeEnable, HIGH);         //H bridge enable on
-  digitalWrite(controlPin1, LOW);           //Pin1 high, Pin2 low. Motor will spin forward
+  digitalWrite(controlPin1, LOW);           //Pin1 high, Pin2 low. Motor will spin backwards
   digitalWrite(controlPin2, HIGH);
   
 }
@@ -44,7 +44,7 @@ void motor_backwards() {                    //Function to move our motor forward
 void motor_stop() {                         //Function to move our motor forward for an amount of time input by the user
 
   digitalWrite(bridgeEnable, HIGH);         //H bridge enable on
-  digitalWrite(controlPin1, LOW);           //Pin1 high, Pin2 low. Motor will spin forward
+  digitalWrite(controlPin1, LOW);           //Pin1 high, Pin2 low. Motor will stop spinning
   digitalWrite(controlPin2, LOW);
   
 }
