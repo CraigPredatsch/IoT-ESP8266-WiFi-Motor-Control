@@ -25,7 +25,7 @@ void setup() {
 
 }
 
-void motor_forward() {                      //Function to move our motor forward for an amount of time input by the user
+void motor_forward() {                      //Function to move our motor forward
 
   digitalWrite(bridgeEnable, HIGH);         //H bridge enable on
   digitalWrite(controlPin1, HIGH);          //Pin1 high, Pin2 low. Motor will spin forward
@@ -33,7 +33,7 @@ void motor_forward() {                      //Function to move our motor forward
   
 }
 
-void motor_backwards() {                    //Function to move our motor forward for an amount of time input by the user
+void motor_backwards() {                    //Function to move our motor forward
 
   digitalWrite(bridgeEnable, HIGH);         //H bridge enable on
   digitalWrite(controlPin1, LOW);           //Pin1 low, Pin2 high. Motor will spin backwards
@@ -41,7 +41,7 @@ void motor_backwards() {                    //Function to move our motor forward
   
 }
 
-void motor_stop() {                         //Function to move our motor forward for an amount of time input by the user
+void motor_stop() {                         //Function to move our motor forward
 
   digitalWrite(bridgeEnable, HIGH);         //H bridge enable on
   digitalWrite(controlPin1, LOW);           //Pin1 low, Pin2 low. Motor will stop spinning
